@@ -1,0 +1,18 @@
+{
+	"ulid": "01K985GZK451538RA0NZM0230E",
+	"minTime": 1762273766922,
+	"maxTime": 1762279200000,
+	"stats": {
+		"numSamples": 204033,
+		"numFloatSamples": 204033,
+		"numSeries": 1695,
+		"numChunks": 1823
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01K985GZK451538RA0NZM0230E"
+		]
+	},
+	"version": 1
+}

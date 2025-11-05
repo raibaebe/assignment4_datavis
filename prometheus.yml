@@ -1,1 +1,20 @@
-{\rtf1}
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "node_exporter"
+    static_configs:
+      - targets: ["node_exporter:9100"]
+
+  - job_name: "db_exporter"
+    static_configs:
+      - targets: ["db_exporter:9187"]
+
+  - job_name: "custom_exporter"
+    static_configs:
+      - targets: ["custom_exporter:8000"]
+  - job_name: 'windows'
+    static_configs:
+      - targets: ['host.docker.internal:9182']
+
+##https://astanait.webhook.office.com/webhookb2/bf5f4957-29ea-4d75-8ca7-78b5d6554bc6@158f15f3-83e0-4906-824c-69bdc50d9d61/IncomingWebhook/0fd0e55747d9443aafaf6911ab5e6c8e/1905a383-6aeb-4065-af35-d6e4c7b9daa3/V2oxSBsoAeJFMMdQFWQ_R6s4q0RQXmjDBhLMqkXTNoUKM1
